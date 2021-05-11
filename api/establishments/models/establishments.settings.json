@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "establishments",
+  "info": {
+    "name": "establishments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "imgsUrl": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imgsMobileUrl": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "selfCatering": {
+      "type": "boolean",
+      "default": false
+    },
+    "maxGuests": {
+      "type": "decimal"
+    },
+    "imgUrl": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "facilityIcons": {
+      "type": "json",
+      "unique": false
+    },
+    "roomType": {
+      "type": "string"
+    },
+    "stars": {
+      "type": "json",
+      "required": false
+    },
+    "bookingIncludes": {
+      "type": "json"
+    },
+    "popularFacilityIcons": {
+      "type": "json"
+    }
+  }
+}

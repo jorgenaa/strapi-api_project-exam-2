@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/icons",
+      "handler": "icons.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/icons",
+      "handler": "icons.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/icons",
+      "handler": "icons.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

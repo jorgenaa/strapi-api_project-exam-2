@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "icons",
+  "info": {
+    "name": "icons",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {}
+}
